@@ -11,7 +11,11 @@ How to use:
     https://docs.oracle.com/javase/8/docs/technotes/guides/install/linux_jdk.html#BJFJJEFG
 
 2) install maven
-
+    
+    if you are on ubuntu - `sudo apt install maven`
+    
+    else:
+    
     download link: https://maven.apache.org/download.cgi
 
     how to install link: https://maven.apache.org/install.html
