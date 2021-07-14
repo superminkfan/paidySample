@@ -78,7 +78,7 @@ public class MaskInfoTest {
 
     @Test
     public void wrongInput() {
-        Assert.assertNotEquals(MaskInfo.action(null), "t*****t@test.com.c");
+        Assert.assertNotEquals(MaskInfo.action("test@test.com.c"), "t*****t@test.com.c");
     }
 
     @After
