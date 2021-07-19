@@ -54,6 +54,7 @@ public class MaskInfo {
              * domain names are like secondlevel.com or thirdlevel.secondlevel.com. The top-level domain (.com in these examples) must consist of two to six letters only.
              */
             String emailRegExp = "^^[\\w!#$%&’*+/=?`{|}~^-]+(?:\\.[\\w!#$%&’*+/=?`{|}~^-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$";
+            Pattern emailPattern = Pattern.compile(emailRegExp);
 
             /**
              * Phone regExp
@@ -70,7 +71,6 @@ public class MaskInfo {
              */
             String phoneRegExp = "^(\\s*)?(\\+)?([^- ]?\\d[- ]?){9,13}(\\s*)?$";
 
-            Pattern emailPattern = Pattern.compile(emailRegExp);
             Pattern phonePattern = Pattern.compile(phoneRegExp);
 
             s = s.trim();
